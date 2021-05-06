@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1224px;
+    margin: auto;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align-last: left;
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+img{
+    max-width:100%;
+}
+a, li{
+    text-decoration: none;
+    list-style-type: none;
+    display:inline block;
+}
+.clear_fix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* Main css start */
+h1, h2, h3, h4, h5, h6 span a p{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.header{
+    padding: 4px 0;
+    
+}
+.header_logo{
+    width: 30%;
+}
+.header_logo img{
+    height: 45px;
+    float: left;
+    margin-right: 10px;
+    color: #010101;
+}
+.header_logo span{
+    cursor: pointer;
+    margin-top: 3px;
+    display: block;
+    font-size: 33px;
+    margin-right: -17px;
+    transition: .7s;
+    font-weight:500;
+}
+.header_logo span:hover{
+    color: #cccccc;
+}
+.header_menu{
+    width: 60%;
+}
+.header_menu ul{
+    
+}
+.header_menu ul li {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 41px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.header_menu ul li a{
+    display: block;
+    color: #010101;
+    font-weight: 300;
+    transition: all .6s ease-in-out;
+}
+.header_menu ul li a:hover{
+    color: #6278df;
+}
+.header_menu ul li ul{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+}
+.header_menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+.header_menu ul li ul li {
+    width: 195px;
+    border-bottom: 1px solid #ccc;
+    z-index: 9999;
+    background-color: #fff;
+}
+.header_menu ul li ul li a{
+    display: block;
+}
+
+.header_menu ul li ul li ul li{
+    width: 400px;
+}
+.header_menu ul li ul li ul::first-child li{
+    display: block;
+}
+.header_menu ul li ul li ul li a{}
+
+.header_button {
+    width: 10%;
+}
+.header_btn {
+    border: 2px solid #6278df;
+    padding: 8px 20px;
+    margin-top: 5px;
+    display: block;
+    color: #6278df;
+    font-size: 20px;
+    background: none;
+    font-weight: 900;
+    border-radius: 8px;
+    transition: all .7s ease-in-out;
+}
+.header_btn:hover{
+    color: #fff;
+    background-color: #6278df;
+}
+/*bannerSection*/
+.banner_section{
+    background-image: url(./img/mbr-4.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 200px;
+    position: relative;
+    z-index: 11;
+}
+.banner_section::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(3, 3, 3, 0.342);
+    z-index: -1;
+}
+.banner_section h3{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+.banner_section h1{
+    font-size: 56px;
+    color: white;
+    padding: 15px 0;
+}
+.banner_section button{
+    padding: 19px 55px;
+    margin-right: 21px;
+    font-size: 20px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    color:#7d7d7d;
+    transition: all .6s ease-in-out;;
+}
+.banner_section button:hover{
+    background-color: #6278df;
+    color: white;
+}
+
+.v__section{
+    padding: 100px 0;
+    background-color: #f7f9ff;
+}
+.v__left{
+    width:48%;
+}
+.v__right{
+    width:48%;
+}
+.v__right h1{
+    font-size: 48px;
+    line-height: 70px;
+    font-weight: 400;
+}
+.v__right  p{
+    color:#767676;
+    font-size:20.8px;
+    line-height:35px;
+    letter-spacing:normal;
+}
+
+.servicSection{}
+.s__title{}
+.s__title h1 {
+    font-size: 60px;
+    font-weight: 500;
+    margin-top: 90px;
+}
+.s__title p {
+    font-size: 28.8px;
+    color: #757575;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.s__items {
+    width: 32%;
+    box-shadow: 10px 10px 5px #6279df11;
+    padding: 35px 17px;
+    margin-right: 10px;
+    margin-top: 90px;
+    background-color: #fcfdfe;
+    transition: all .6s ease-in-out;
+}
+.s__items:hover{
+    box-shadow: 10px 10px 5px #6279df2f;
+}
+.s__icon{}
+.s__icon span {
+    float: left;
+    width: 55px;
+    height: 150px;
+    font-size: 30px;
+    color: #6278df;;
+}
+.s__content{}
+.s__content h2 {
+    font-size: 30.6px;
+    padding-bottom: 13px;
+    font-weight: 400;
+}
+.s__content p{
+    font-size: 20.8px;
+    color: #757575;
+    line-height: 33px;
+}
